@@ -91,6 +91,12 @@
             </dependency>
 
             <dependency>
+                <groupId>com.github.victools</groupId>
+                <artifactId>jsonschema-generator</artifactId>
+                <version>4.31.1</version> <!-- 推荐使用最新稳定版 -->
+            </dependency>
+
+            <dependency>
                 <groupId>com.dawang</groupId>
                 <artifactId>rag-knowledge-api</artifactId>
                 <version>1.0</version>

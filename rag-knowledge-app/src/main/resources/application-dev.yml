@@ -1,0 +1,33 @@
+server:
+  port: 8090
+
+spring:
+  ai:
+    ollama:
+      base-url: http://117.72.81.196:11434
+  web:
+    resources:
+      static-locations:
+        - classpath:/static/
+        - file:docs/dev-ops/nginx/html/
+
+
+# Redis
+redis:
+  sdk:
+    config:
+      host: 47.121.185.163
+      port: 16379
+      pool-size: 10
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true
+
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
